@@ -1,0 +1,345 @@
+/* =========================
+   Global Styles
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+/* =========================
+   Navigation Bar
+========================= */
+.navbar {
+    background-color: #1f3a5f;
+    color: #ffffff;
+    padding: 18px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    height: 55px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Login button */
+.nav-btn {
+    margin-left: 25px;
+    padding: 12px 26px;
+    background-color: #cedbed;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #3777c0;
+    color: #ffffff;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+    height: 80vh;
+    background-image: url("homebg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 18px 0;
+    color: #ffffff;
+}
+
+.hero input[type="button"] {
+    padding: 14px 34px;
+    background-color: #1f3a5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.hero input[type="button"]:hover {
+    background-color: #16314f;
+}
+
+/* =========================
+   Features Section
+========================= */
+.features {
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.feature h2 {
+    font-size: 30px;
+    color: #1f3a5f;
+    margin-bottom: 20px;
+}
+
+/* Search bar increased */
+.feature input[type="search"] {
+    padding: 12px;
+    width: 320px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.feature button {
+    padding: 12px 22px;
+    background-color: #1f3a5f;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.feature-item {
+    background-color: #f7f9fc;
+    padding: 28px;
+    border-radius: 12px;
+    width: 310px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.feature-item img {
+    max-width: 130px;
+    margin-bottom: 18px;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #1f3a5f;
+    margin-bottom: 10px;
+}
+
+/* Show More Button */
+.button {
+    width: 100%;
+    text-align: center;
+}
+
+.button input[type="button"] {
+    padding: 14px 36px;
+    background-color: #f9c74f;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button input[type="button"]:hover {
+    background-color: #f4b942;
+}
+
+/* =========================
+   About Us Section
+========================= */
+.about-us {
+    background-color: #e8edf3;
+    padding: 70px 20px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #1f3a5f;
+    margin-bottom: 18px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+/* Read More Button */
+.about-content .nav-btn {
+    padding: 14px 34px;
+    font-size: 16px;
+    background-color: #16314f;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.about-content .nav-btn:hover {
+    background-color: #536e94;
+}
+
+/* =========================
+   Footer Section
+========================= */
+.footer {
+    background-color: #1f3a5f;
+    color: #ffffff;
+    padding: 50px 40px 20px;
+}
+
+/* Main container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Left side */
+.footer-left {
+    flex: 1;
+    min-width: 260px;
+}
+
+.footer-left img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.footer-left h2 {
+    font-size: 26px;
+    color: #f9c74f;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #d6dbe2;
+}
+
+/* Right side */
+.footer-right {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+}
+
+/* Footer columns */
+.footer-box h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #f9c74f;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+    color: #d6dbe2;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-box ul li a:hover {
+    color: #ffffff;
+}
+
+/* Contact text */
+.footer-box:last-child p {
+    display: inline-block;
+    margin-right: 25px;
+    white-space: nowrap;
+}
+
+/* Bottom section */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 40px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #cfd6df;
+}
+
